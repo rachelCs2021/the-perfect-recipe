@@ -1,10 +1,12 @@
-import { Typography } from "@mui/material"
+import logo from "../assets/logo.png";
+import { Box, AppBar } from "@mui/material";
+
 function Header() {
-    return (
-      <div className="header">
-  <Typography variant="h1" sx={{color: "primary.main"}} >המתכון המושלם</Typography>
-      </div>
-    );
-  }
-  
-  export default Header;
+  return (
+      <AppBar position="fixed" sx={{mb: 3}}>
+        <img src={logo} height={120} width={200} alt="the-perfect-recipe-logo" />
+      </AppBar>
+  );
+}
+
+export default Header;
