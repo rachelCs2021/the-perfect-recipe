@@ -1,6 +1,6 @@
 import {
   Card,
-  CardActionArea,
+//   CardActionArea,
   CardMedia,
   CardContent,
   CardActions,
@@ -17,7 +17,7 @@ interface Props {
 
 function RecipeCard(props: Props) {
   return (
-    <Card sx={{ maxWidth: 345, minWidth: 310, minHeight: 400, mx: 'auto' }}>
+    <Card sx={{ width: {xs: 1, md: 320}, minHeight: 400, mx: 'auto' }}>
       {/* <CardActionArea> */}
         <CardMedia
           component="img"
