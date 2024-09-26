@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./component/Header";
 import CardButton from "./component/CardButton";
 import RecipeCard from "./component/Card";
+import Recipe from "./component/Recipe"
 import { Container, Box } from "@mui/material";
 import NewRecipe from "./component/NewRecipe";
 
@@ -27,7 +28,8 @@ function App() {
   return (
     <Container maxWidth="lg">
       <Header />
-      <NewRecipe />
+      <Recipe />
+      {/* <NewRecipe /> */}
       {/* <Box
         sx={{
           mt: 16,
