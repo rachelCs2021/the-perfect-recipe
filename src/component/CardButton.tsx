@@ -13,7 +13,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     zIndex: 1,
     "& .MuiImageBackdrop-root": {
       opacity: 0.15,
-      borderRadius: "30px"
+      borderRadius: "30px",
     },
     "& .MuiImageMarked-root": {
       opacity: 0,
@@ -53,7 +53,7 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   top: 0,
   bottom: 0,
   backgroundColor: theme.palette.common.black,
-  opacity: 0.4,
+  opacity: 0.2,
   borderRadius: "30px",
   transition: theme.transitions.create("opacity"),
 }));
@@ -82,12 +82,15 @@ export default function CardButton(props: Props) {
       focusRipple
       key={props.title}
       style={{
-        width: "320px",
+        minWidth: "320px",
         height: "400px",
-        margin: 'auto'
+        marginRight: "15px",
+        marginLeft: "15px"
       }}
     >
-      <ImageSrc style={{ backgroundImage: `url(${props.url})`, borderRadius: "30px" }} />
+      <ImageSrc
+        style={{ backgroundImage: `url(${props.url})`, borderRadius: "30px" }}
+      />
       <ImageBackdrop className="MuiImageBackdrop-root" />
       <Image>
         <Typography
